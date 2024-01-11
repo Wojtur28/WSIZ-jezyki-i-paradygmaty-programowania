@@ -1,0 +1,5 @@
+(defun suma-kwadratow (start koniec)
+  (let ((suma 0))
+    (do ((i start (+ i 1)))
+        ((> i koniec) suma)
+      (setf suma (+ suma (* i i))))))
